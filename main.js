@@ -11,3 +11,7 @@ function factorial(n) {
   }
 console.log (factorial(17));
 
+// weekly algo practice #10
+
+//Prompt: Write a function that takes a number n and returns the first n numbers in the Fibonacci sequence.
+//Extension: Modify the function to return the Fibonacci sequence as a comma-separated string.

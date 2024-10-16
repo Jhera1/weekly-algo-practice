@@ -17,18 +17,25 @@
 //Extension: Modify the function to return the Fibonacci sequence as a comma-separated string.
 
 
-function fibonacciSequence(n) {
-  if (n <= 0) {
-    return [];
-  }
+// function fibonacciSequence(n) {
+//   if (n <= 0) {
+//     return [];
+//   }
   
-  // Start the sequence with the first two Fibonacci numbers
-  const sequence = [0, 1];
+//   // Start the sequence with the first two Fibonacci numbers
+//   const sequence = [0, 1];
   
-  // Generate the rest of the sequence up to n elements
-  for (let i = 2; i < n; i++) {
-    sequence.push(sequence[i - 1] + sequence[i - 2]);
-  }
+//   // Generate the rest of the sequence up to n elements
+//   for (let i = 2; i < n; i++) {
+//     sequence.push(sequence[i - 1] + sequence[i - 2]);
+//   }
   
-  return sequence.slice(0, n); // Ensure only n numbers are returned
-}
+//   return sequence.slice(0, n); // Ensure only n numbers are returned
+// }
+
+// Weekly algo practice #11
+
+//Prompt: Write a function that takes a string and returns a dictionary with each character as the key and the number of times it appears in the string as the value.
+// Extension: Modify the function to ignore spaces and punctuation, and count letters case-insensitively.
+// Extension: Modify the function to return the kth most commonly occurring letter. 
+// Example: ("Hello, World!", 2) would return the 2nd most common letter in the string. In this case, "o"!

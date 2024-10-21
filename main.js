@@ -56,10 +56,13 @@
 
 // or
 
-const charCountInOrder = (str) => Object.fromEntries(
-    [...str].reduce((map, char) => map.set(char, (map.get(char) || 0) + 1), new Map())
-);
+// const charCountInOrder = (str) => Object.fromEntries(
+//     [...str].reduce((map, char) => map.set(char, (map.get(char) || 0) + 1), new Map())
+// );
 
 
-const result = charCountInOrder("hello world");
-console.log(result);
+// const result = charCountInOrder("hello world");
+// console.log(result);
+
+//Prompt: Write a function that takes a string as input and returns the longest word in the string.
+//Extension: Modify the function to return an array of all longest words (in case there are ties).

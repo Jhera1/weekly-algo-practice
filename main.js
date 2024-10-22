@@ -66,3 +66,26 @@
 
 //Prompt: Write a function that takes a string as input and returns the longest word in the string.
 //Extension: Modify the function to return an array of all longest words (in case there are ties).
+
+
+const findLongestWord = (str) => {
+    // Split the string into an array of words
+    const words = str.split(' ');
+    
+    // Initialize a variable to keep track of the longest word
+    let longestWord = '';
+
+    // Loop through the array of words
+    for (const word of words) {
+        // If the current word's length is greater than the longest word's length, update longestWord
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+
+    return longestWord;
+};
+
+// Example usage:
+const sentence = "The quick brown fox jumped over the lazy dog";
+console.log(findLongestWord(sentence)); // Output: "jumped"

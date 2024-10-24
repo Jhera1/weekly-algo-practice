@@ -83,10 +83,10 @@ const findLongestWord = (str) => {
     let longestWord = '';  
 
     // Loop through the array of words
-    for (let word of words) {
+    for (const word of words) {
         // If the current word's length is greater than the longest word's length, update longestWord
         if (word.length > longestWord.length) {
-            longestWord = word;
+            longestWord = word; 
         }
     }
 

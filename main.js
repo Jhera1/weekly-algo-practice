@@ -64,6 +64,11 @@
 // const result = charCountInOrder("hello world");
 // console.log(result);
 
+
+
+
+//weekly algo #12
+
 //Prompt: Write a function that takes a string as input and returns the longest word in the string.
 //Extension: Modify the function to return an array of all longest words (in case there are ties).
 
@@ -78,7 +83,7 @@ const findLongestWord = (str) => {
     let longestWord = '';  
 
     // Loop through the array of words
-    for (const word of words) {
+    for (let word of words) {
         // If the current word's length is greater than the longest word's length, update longestWord
         if (word.length > longestWord.length) {
             longestWord = word;

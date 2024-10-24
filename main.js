@@ -73,21 +73,28 @@
 //Extension: Modify the function to return an array of all longest words (in case there are ties).
 
 
-const findLongestWord = (str) => {
-    const words = str.split(' '); 
-    console.log(str);
-    console.log(words); 
+// const findLongestWord = (str) => {
+//     const words = str.split(' '); 
+//     console.log(str);
+//     console.log(words); 
 
-    let longestWord = '';  
+//     let longestWord = '';  
 
-    for (const word of words) {
-        if (word.length > longestWord.length) {
-            longestWord = word; 
-        }
-    }
+//     for (const word of words) {
+//         if (word.length > longestWord.length) {
+//             longestWord = word; 
+//         }
+//     }
 
-    return longestWord;
-};
+//     return longestWord;
+// };
+
+// const sentence = "somewhere in time";
+// console.log(findLongestWord(sentence)); 
+
+// or
+
+const findLongestWord = (str) => str.split(' ').reduce((longest, word) => word.length > longest.length ? word : longest, '');
 
 const sentence = "somewhere in time";
 console.log(findLongestWord(sentence)); 

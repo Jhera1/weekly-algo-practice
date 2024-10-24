@@ -94,7 +94,10 @@
 
 // or
 
-const findLongestWord = (str) => str.split(' ').reduce((longest, word) => word.length > longest.length ? word : longest, '');
+const findLongestWord = (str) => 
+    str.split(' ')
+.reduce((longest, word) => 
+    word.length > longest.length ? word : longest, '');
 
 const sentence = "somewhere in time";
 console.log(findLongestWord(sentence)); 

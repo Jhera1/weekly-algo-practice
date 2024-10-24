@@ -87,5 +87,5 @@ const findLongestWord = (str) => {
 };
 
 // Example usage:
-const sentence = "The quick brown fox jumped over the lazy dog";
+const sentence = "over the lazy dog";
 console.log(findLongestWord(sentence)); // Output: "jumped"

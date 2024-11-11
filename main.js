@@ -113,4 +113,4 @@
 
 const rotateRight = (arr, k) => arr.slice(-k % arr.length)
 .concat(arr.slice(0, -k % arr.length));
-console.log(rotateRight([9, 8, 7, 6, 5, 4, 3, 2, 1]), 1)
+console.log(rotateRight([9, 8, 7, 6, 5, 4, 3, 2, 1], 1));

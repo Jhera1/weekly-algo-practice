@@ -94,10 +94,23 @@
 
 // or
 
-const findLongestWord = (str) => 
-    str.split(' ')
-    .reduce((longest, word) => 
-    word.length > longest.length ? word : longest, '');
+// const findLongestWord = (str) => 
+//     str.split(' ')
+//     .reduce((longest, word) => 
+//     word.length > longest.length ? word : longest, '');
 
-const sentence = "Somewhere in time";
-console.log(findLongestWord(sentence)); 
+// const sentence = "Somewhere in time";
+// console.log(findLongestWord(sentence)); 
+
+// weekly algo #13
+
+// Prompt: Write a function that takes an array and
+// a number k as input and rotates the
+// array to the right by k steps.
+
+// Extension: Modify the function to handle negative
+// values of k to rotate the array to the left.
+
+const rotateRight = (arr, k) => arr.slice(-k % arr.length)
+.concat(arr.slice(0, -k % arr.length));
+console.log(rotateRight([9, 8, 7, 6, 5, 4, 3, 2, 1]), 1)

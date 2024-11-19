@@ -116,6 +116,9 @@
 // .concat(arr.slice(0, -k % arr.length));
 // console.log(rotateRight([9, 8, 7, 6, 5, 4, 3, 2, 1], 1));
 
+
+//#14
 //Prompt: Write a function filterArray that takes an array and a callback function as input. The function should return a new array containing only the elements that satisfy the condition defined in the callback function.
 
 //Extension: Modify the filterArray function to accept an additional argument that specifies the starting index from which to begin filtering the array.
+const filterArray = () => 

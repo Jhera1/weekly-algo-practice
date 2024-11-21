@@ -121,4 +121,9 @@
 //Prompt: Write a function filterArray that takes an array and a callback function as input. The function should return a new array containing only the elements that satisfy the condition defined in the callback function.
 
 //Extension: Modify the filterArray function to accept an additional argument that specifies the starting index from which to begin filtering the array.
-const filterArray = () => 
+const filterArray = () =>
+
+// #15 
+
+//Prompt: Given an array of integers, find the highest product of two unique numbers in the array.
+//Extension: Do not use native methods.

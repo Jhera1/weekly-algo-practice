@@ -122,6 +122,8 @@
 
 //Extension: Modify the filterArray function to accept an additional argument that specifies the starting index from which to begin filtering the array.
 const filterArray = (arr, callback) => arr.filter(callback);
+const callback = (num) => num > 2;
+console.log(filterArray([1, 2, 2, 3, 4, 5], callback)); 
 
 
 // #15 

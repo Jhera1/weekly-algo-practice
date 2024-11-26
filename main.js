@@ -121,12 +121,39 @@
 //Prompt: Write a function filterArray that takes an array and a callback function as input. The function should return a new array containing only the elements that satisfy the condition defined in the callback function.
 
 //Extension: Modify the filterArray function to accept an additional argument that specifies the starting index from which to begin filtering the array.
-const filterArray = (arr, callback) => arr.filter(callback);
-const callback = (num) => num > 2; 
-console.log(filterArray([1, 2, 2, 3, 4, 5], callback)); 
+// const filterArray = (arr, callback) => arr.filter(callback);
+// const callback = (num) => num > 2; 
+// console.log(filterArray([1, 2, 2, 3, 4, 5], callback)); 
 //output should be  [3, 4, 5]
 
 // #15 
 
 // Prompt: Given an array of integers, find the highest product of two unique numbers in the array.
-// Extension: Do not use native methods.
+// let highestProductOfTwo = (arr) => 
+
+    const highestProductOfTwo = (arr) => {
+        if (arr.length < 2) throw new Error("Array must have at least two elements");
+      
+        let [max1, max2, min1, min2] = [-Infinity, -Infinity, Infinity, Infinity];
+      
+        for (const num of arr) {
+          if (num > max1) [max1, max2] = [num, max1];
+          else if (num > max2) max2 = num;
+      
+          if (num < min1) [min1, min2] = [num, min1];
+          else if (num < min2) min2 = num;
+        }
+      
+        return Math.max(max1 * max2, min1 * min2);
+      };
+      
+      // Example Usage
+      const nums = [-10, -20, 5, 7, 10];
+      console.log(highestProductOfTwo(nums)); // Output: 200
+      
+
+
+
+
+
+    // Extension: Do not use native methods.

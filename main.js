@@ -132,7 +132,7 @@
 // let highestProductOfTwo = (arr) => 
 
     const highestProductOfTwo = (arr) => {
-        if (arr.length < 2) throw new Error("Array must have at least two elements");
+        if (arr.length < 2) throw new Error("The Array is hungry for more elements");
       
         let [max1, max2, min1, min2] = [-Infinity, -Infinity, Infinity, Infinity];
       
@@ -142,7 +142,7 @@
       
           if (num < min1) [min1, min2] = [num, min1];
           else if (num < min2) min2 = num;
-        }
+        } 
       
         return Math.max(max1 * max2, min1 * min2);
       };

@@ -153,20 +153,19 @@
       
 
     const highestProductOfTwo = (arr) => {
-        if (arr.length < 2) throw new Error("Array must have at least two elements");
+        if (arr.length < 2) throw new Error("The Array is hungry for more elements");
       
-        arr.sort((a, b) => a - b); // Sort in ascending order
+        arr.sort((a, b) => a - b);
         const n = arr.length;
       
         return Math.max(arr[n - 1] * arr[n - 2], arr[0] * arr[1]);
       };
       
-      // Example Usage
       const nums = [-10, -20, 5, 7, 10];
-      console.log(highestProductOfTwo(nums)); // Output: 200
+      console.log(highestProductOfTwo(nums));
       
 
-
+    
 
     // Extension: Do not use native methods.
 

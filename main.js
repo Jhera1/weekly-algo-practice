@@ -147,7 +147,7 @@
     //     return Math.max(max1 * max2, min1 * min2);
     //   };
       
-    //   // Example Usage
+    
     //   const nums = [-10, -20, 5, 7, 10];
     //   console.log(highestProductOfTwo(nums)); // Output: 200
       

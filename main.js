@@ -152,22 +152,33 @@
     //   console.log(highestProductOfTwo(nums)); // Output: 200
       
 
-    const highestProductOfTwo = (arr) => {
-        if (arr.length < 2) throw new Error("The Array is hungry for more elements");
+    // const highestProductOfTwo = (arr) => {
+    //     if (arr.length < 2) throw new Error("The Array is hungry for more elements");
       
-        arr.sort((a, b) => a - b);
-        const n = arr.length;
+    //     arr.sort((a, b) => a - b);
+    //     const n = arr.length;
       
-        return Math.max(arr[n - 1] * arr[n - 2], arr[0] * arr[1]);
-      };
+    //     return Math.max(arr[n - 1] * arr[n - 2], arr[0] * arr[1]);
+    //   };
       
-      const nums = [-10, -20, 5, 7, 10];
-      console.log(highestProductOfTwo(nums));
+    //   const nums = [-10, -20, 5, 7, 10, 100, 37, -44];
+    //   console.log(highestProductOfTwo(nums));
       
+// Extension: Do not use native methods.
 
-    
 
-    // Extension: Do not use native methods.
+// #16
+
+//"Prompt: Write a function that determines if a 
+// number is prime. 
+
+const isPrime = (num) => {
+    if (num <= 1) return false;
+    for 
+}
+
+// Extension: Modify the function to return an array of 
+// all prime numbers less than the given number."
 
 
 

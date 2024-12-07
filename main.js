@@ -174,8 +174,13 @@
 
 const isPrime = (num) => {
     if (num <= 1) return false;
-    for 
+    for (let i = 2; i <= Math.sqrt(num); i++) { // awesome use of .sqrt()
+        if (num % i === 0) {
+            return false;
+        } return true
+    }
 }
+console.log(isPrime(11));
 
 // Extension: Modify the function to return an array of 
 // all prime numbers less than the given number."

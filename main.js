@@ -197,4 +197,4 @@ function drawStairs(n) {
     }
     return letterI + spaces
   }
-  console.log(drawStairs(7))
+  console.log(drawStairs(9))

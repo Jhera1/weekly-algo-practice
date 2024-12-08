@@ -172,18 +172,29 @@
 //"Prompt: Write a function that determines if a 
 // number is prime. 
 
-const isPrime = (num) => {
-    if (num <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) { // awesome use of .sqrt()
-        if (num % i === 0) {
-            return false;
-        } return true
-    }
-}
-console.log(isPrime(11));
+// const isPrime = (num) => {
+//     if (num <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(num); i++) { // awesome use of .sqrt()
+//         if (num % i === 0) {
+//             return false;
+//         } return true
+//     }
+// }
+// console.log(isPrime()); 
 
 // Extension: Modify the function to return an array of 
 // all prime numbers less than the given number."
 
+// const sumNoDuplicates = (numList) => 
+//     [...new Set(numList)].reduce((acc, curr) => acc + curr, 0);
+// console.log(sumNoDuplicates( [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]))  
 
-
+function drawStairs(n) {
+    // your code here
+    for (i = 1; i <= n; i++) { 
+      let spaces = " "
+      let letterI = 'I'
+    }
+    return letterI + spaces
+  }
+  console.log(drawStairs(7))

@@ -9,5 +9,11 @@
 // Extension: Modify the function to minimize the total 
 // number of operations.
 
-const moveZereosToEnd = arr => arr.sort().reverse()
-console.log(moveZereosToEnd([0, 1, 0, 3]))
+
+const moveZereosToEnd = arr => {
+  let nonZeros = arr.filter(a => a !== 0)
+  let zeros = arr.filter(a => a === 0)
+  return nonZeros.concat(zeros)
+}
+
+console.log(moveZereosToEnd([0, 1, 0, 3])) // => [1, 3, 0, 0]

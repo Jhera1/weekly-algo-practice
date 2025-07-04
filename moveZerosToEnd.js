@@ -18,16 +18,16 @@
 
 // Extention
 
-function moveZereosToEnd(arr) {
-  let placePositiveAtIndex = 0;
+const moveZereosToEnd = arr => {
+  let nextNonZeroIndex = 0;
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== 0) {
-      arr[placePositiveAtIndex++] = arr[i];
+      arr[nextNonZeroIndex++] = arr[i];
     }
   }
-  while (placePositiveAtIndex < arr.length) {
-    arr[placePositiveAtIndex++] = 0;
+  while (nextNonZeroIndex < arr.length) {
+    arr[nextNonZeroIndex++] = 0;
   }
   return arr;
 }

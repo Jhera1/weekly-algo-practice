@@ -24,7 +24,7 @@ const longestWords = str => {
     let count = -Infinity
     for (let word of splitString) {
       if (word.length > count) {
-        longestWords = [word]
+        longestWords = [word] // reset the array!!
         count = word.length
       }  else if (word.length === count) {
         longestWords.push(word)
